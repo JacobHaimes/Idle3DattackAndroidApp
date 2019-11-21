@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/colorsbackground"
+    android:minWidth="350dp"
+    android:minHeight="270dp">
+
+    <ImageView
+        android:id="@+id/septUpgradeImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintStart_toEndOf="@+id/hexUpgradeImg"
+        app:layout_constraintTop_toBottomOf="@+id/squareUpgrade"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/hexUpgradeImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/mainhexagon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerUpgrade"
+        app:srcCompat="@drawable/mainhexagon" />
+
+    <ImageView
+        android:id="@+id/octoUpgradeImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintStart_toEndOf="@+id/septUpgradeImg"
+        app:layout_constraintTop_toBottomOf="@+id/pentaUpgrade"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/pentaUpgradeImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/mainpentagon"
+        app:layout_constraintStart_toEndOf="@+id/squareUpgradeImg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/mainpentagon" />
+
+    <Button
+        android:id="@+id/hexUpgrade"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/upgradebuttonlayout"
+        android:clickable="true"
+        android:enabled="false"
+        android:text="625"
+        android:textColor="@drawable/upgradestextcolor"
+        android:textColorHighlight="#7C23E2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hexUpgradeImg" />
+
+    <Button
+        android:id="@+id/octoUpgrade"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:background="@drawable/upgradebuttonlayout"
+        android:clickable="true"
+        android:enabled="false"
+        android:text="31.25k"
+        android:textColor="@drawable/upgradestextcolor"
+        android:textColorHighlight="#7C23E2"
+        app:layout_constraintStart_toEndOf="@+id/septaUpgrade"
+        app:layout_constraintTop_toBottomOf="@+id/octoUpgradeImg" />
+
+    <Button
+        android:id="@+id/septaUpgrade"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/upgradebuttonlayout"
+        android:clickable="true"
+        android:enabled="false"
+        android:text="1.25k"
+        android:textColor="@drawable/upgradestextcolor"
+        android:textColorHighlight="#7C23E2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hexUpgrade"
+        app:layout_constraintTop_toBottomOf="@+id/septUpgradeImg" />
+
+    <Button
+        android:id="@+id/squareUpgrade"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:background="@drawable/upgradebuttonlayout"
+        android:clickable="true"
+        android:enabled="false"
+        android:text="50"
+        android:textColor="@drawable/upgradestextcolor"
+        android:textColorHighlight="#7C23E2"
+        app:layout_constraintStart_toEndOf="@+id/playerUpgrade"
+        app:layout_constraintTop_toBottomOf="@+id/squareUpgradeImg" />
+
+    <Button
+        android:id="@+id/pentaUpgrade"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:background="@drawable/upgradebuttonlayout"
+        android:clickable="true"
+        android:enabled="false"
+        android:text="250"
+        android:textColor="@drawable/upgradestextcolor"
+        android:textColorHighlight="#7C23E2"
+        app:layout_constraintStart_toEndOf="@+id/squareUpgrade"
+        app:layout_constraintTop_toBottomOf="@+id/pentaUpgradeImg" />
+
+    <Button
+        android:id="@+id/playerUpgrade"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/upgradebuttonlayout"
+        android:clickable="true"
+        android:enabled="false"
+        android:text="10"
+        android:textColor="@drawable/upgradestextcolor"
+        android:textColorHighlight="#7C23E2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triUpgradeImg" />
+
+    <Button
+        android:id="@+id/exitUpgrades"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/roundedbutton"
+
+        android:text="x"
+        android:textColor="#222222"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/triUpgradeImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maintriangle" />
+
+    <ImageView
+        android:id="@+id/squareUpgradeImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/mainsquare"
+        app:layout_constraintStart_toEndOf="@+id/triUpgradeImg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/mainsquare" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

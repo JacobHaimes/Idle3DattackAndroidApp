@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="#00000000"
+        android:src="@drawable/sixsided"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/mainEnemy"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="#00E21DAA"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/upgradeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/upgradesbutton"
+        android:text="@string/upgrade"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pointsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00C43F3F"
+        android:text="@string/_0_points"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/upgradeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/currentDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Damage"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <ProgressBar
+        android:id="@+id/enemyHealthBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/upgradeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentDmg"
+        app:layout_constraintVertical_bias="0.378"
+        app:srcCompat="@drawable/maintriangle" />
+
+    <Button
+        android:id="@+id/triangleColorBtn"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/squareColorBtn"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/mainSquare"
+        app:layout_constraintEnd_toEndOf="@+id/mainSquare"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/mainSquare"
+        app:layout_constraintTop_toTopOf="@id/mainSquare"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pentagonColorBtn"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/mainPentagon"
+        app:layout_constraintEnd_toEndOf="@id/mainPentagon"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/mainPentagon"
+        app:layout_constraintTop_toTopOf="@id/mainPentagon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/hexagonColorBtn"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/mainHexagon"
+        app:layout_constraintEnd_toEndOf="@id/mainHexagon"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/mainHexagon"
+        app:layout_constraintTop_toTopOf="@id/mainHexagon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/septagonColorBtn"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/mainSeptagon"
+        app:layout_constraintEnd_toEndOf="@id/mainSeptagon"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/mainSeptagon"
+        app:layout_constraintTop_toTopOf="@id/mainSeptagon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/octagonColorBtn"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/mainOctagon"
+        app:layout_constraintEnd_toEndOf="@id/mainOctagon"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/mainOctagon"
+        app:layout_constraintTop_toTopOf="@id/mainOctagon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/mainPentagon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="72dp"
+        android:rotation="30"
+        app:layout_constraintBottom_toTopOf="@+id/upgradeButton"
+        app:layout_constraintEnd_toStartOf="@+id/mainHexagon"
+        app:srcCompat="@drawable/mainpentagon" />
+
+    <ImageView
+        android:id="@+id/mainSquare"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="72dp"
+        android:rotation="-30"
+        app:layout_constraintBottom_toTopOf="@+id/upgradeButton"
+        app:layout_constraintStart_toEndOf="@+id/mainSeptagon"
+        app:srcCompat="@drawable/mainsquare" />
+
+    <TextView
+        android:id="@+id/currentStage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="8dp"
+        android:text="Stage 1/4"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+        app:layout_constraintEnd_toEndOf="@+id/gifImageView" />
+
+    <TextView
+        android:id="@+id/enemyHp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="8dp"
+        android:text="HP: 4/4"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+        app:layout_constraintStart_toStartOf="@+id/gifImageView" />
+
+    <ImageView
+        android:id="@+id/mainHexagon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="24dp"
+        android:rotation="15"
+        app:layout_constraintBottom_toTopOf="@+id/upgradeButton"
+        app:layout_constraintEnd_toStartOf="@+id/mainOctagon"
+        app:srcCompat="@drawable/mainhexagon" />
+
+    <ImageView
+        android:id="@+id/mainSeptagon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="24dp"
+        android:rotation="-15"
+        app:layout_constraintBottom_toTopOf="@+id/upgradeButton"
+        app:layout_constraintStart_toEndOf="@+id/mainOctagon"
+        app:srcCompat="@drawable/mainhexagon" />
+
+    <ImageView
+        android:id="@+id/mainOctagon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/upgradeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mainhexagon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

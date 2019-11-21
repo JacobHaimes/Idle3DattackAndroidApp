@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Idle3Dattack</string>
+    <string name="_4_health">4 Health</string>
+    <string name="upgrades">Upgrades</string>
+    <string name="_0_points">0 Points</string>
+    <string name="button">Button</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="todo">TODO</string>
+    <string name="fire">fire</string>
+    <string name="wow">wow</string>
+</resources>
